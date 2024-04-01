@@ -1,7 +1,9 @@
 package main
 
-import "client-go-example/pkg/restclient"
+import "client-go-example/pkg/dynamic"
 
 func main() {
-	restclient.GetPodListByRestClient("/root/.kube/config")
+	dynamic.GetPodListByDynamic("/root/.kube/config")
+	//clientset.GetPodListByClientSet("/root/.kube/config")
+	//restclient.GetPodListByRestClient("/root/.kube/config")
 }
