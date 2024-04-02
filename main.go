@@ -1,9 +1,10 @@
 package main
 
-import "client-go-example/pkg/dynamic"
+import "client-go-example/pkg/discovery"
 
 func main() {
-	dynamic.GetPodListByDynamic("/root/.kube/config")
+	discovery.GetApiResource("/root/.kube/config")
+	//dynamic.GetPodListByDynamic("/root/.kube/config")
 	//clientset.GetPodListByClientSet("/root/.kube/config")
 	//restclient.GetPodListByRestClient("/root/.kube/config")
 }
